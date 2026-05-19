@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+/* 
+body {
+  perspective: 1000px;
+}
+#box {
+  height: 100px;
+  width: 100px;
+  background-color: lightseagreen;
+   position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: rotateX(70deg); 
+  /* color: #fff; 
+  border: 1px solid #fff;
+}
+
+#box:nth-child(2n + 1) {
+  background-color: crimson;
+}
+
+#parent {
+  height: 400px;
+  width: 400px;
+  background-color: royalblue;
+}
+#child {
+  height: 50%;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: crimson;
+} */
+.page {
+  height: 100%;
+  width: 100%;
+  background-color: royalblue;
+}
+
+.page:nth-child(2n) {
+  background-color: rosybrown;
+}
+
+.page:nth-child(2) {
+  /* position: relative; */
+  height: 1000px;
+}
+#box {
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+  position: sticky;
+  top: 10%;
+}
