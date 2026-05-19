@@ -7,58 +7,61 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: beige;
 }
-/* 
-body {
-  perspective: 1000px;
+/* .parent {
+  position: relative;
 }
-#box {
+.parent div {
+  position: absolute;
+  padding: 20px;
+} */
+/* .parent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.parent div {
+  color: #fff;
+  text-align: center;
+}
+.child1 {
+  height: 100px;
+  width: 100px;
+  background-color: crimson;
+  /* left: 0; 
+}
+.child2 {
+  height: 100px;
+  width: 100px;
+  background-color: royalblue;
+  /* left: 120px; 
+}
+.child3 {
   height: 100px;
   width: 100px;
   background-color: lightseagreen;
-   position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: rotateX(70deg); 
-  /* color: #fff; 
-  border: 1px solid #fff;
-}
-
-#box:nth-child(2n + 1) {
-  background-color: crimson;
-}
-
-#parent {
-  height: 400px;
-  width: 400px;
-  background-color: royalblue;
-}
-#child {
-  height: 50%;
-  width: 50%;
-  margin-top: 50px;
-  margin-left: 50px;
-  background-color: crimson;
+  /* left: 240px; 
 } */
-.page {
-  height: 100%;
-  width: 100%;
-  background-color: royalblue;
+
+.nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: navajowhite;
 }
 
-.page:nth-child(2n) {
-  background-color: rosybrown;
+.part2 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
 }
 
-.page:nth-child(2) {
-  /* position: relative; */
-  height: 1000px;
-}
-#box {
-  height: 200px;
-  width: 200px;
-  background-color: crimson;
-  position: sticky;
-  top: 10%;
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
