@@ -142,15 +142,15 @@ Problem 8: Print X shape
 Problem 9: Print V shape
     
 */
-let n = Number(prompt("Enter the loop counter: "));
-let cols = 2 * n - 1;
-for (let i = 0; i < n; i++) {
-  for (let j = 1; j <= cols - i; j++) {
-    if (j == i + 1 || j == cols - i) {
-      process.stdout.write("*");
-    } else {
-      process.stdout.write(" ");
-    }
-  }
-  console.log();
-}
+// let n = Number(prompt("Enter the loop counter: "));
+// let cols = 2 * n - 1;
+// for (let i = 0; i < n; i++) {
+//   for (let j = 1; j <= cols - i; j++) {
+//     if (j == i + 1 || j == cols - i) {
+//       process.stdout.write("*");
+//     } else {
+//       process.stdout.write(" ");
+//     }
+//   }
+//   console.log();
+// }

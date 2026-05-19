@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 900px;
+  background-color: #000000;
+  margin-left: 9%;
+  position: relative;
+  margin-top: 1%;
+  z-index: 1;
+}
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+#logo img {
+  width: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+header button {
+  background-color: #001;
+  padding: 10px;
+  border: none;
+  color: #ccc;
+  background-color: #1b1a1a;
+  border-radius: 5px;
+}
+
+.section1 {
+  height: 20%;
+  text-align: center;
+  padding: 50px 20px;
+}
+.section1 h1 {
+  font-size: 100px;
+}
+
+.section2 .links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section2 .links ul li {
+  background-color: #1b1a1a;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.section2 .links ul li.active {
+  background-color: #fd4809;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
+}
+.card {
+  border-radius: 10px;
+  /* background-color: #1b1a1a; */
+  border: 1px solid #1b1a1a;
+  width: 33%;
+}
+
+.card img {
+  width: 100%;
+}
+.card .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card .chips ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card .chips ul li {
+  padding: 5px 10px;
+  background-color: #511c07;
+  color: #f09c76;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+.card .date {
+  color: #565656;
+  font-size: 12px;
+}
