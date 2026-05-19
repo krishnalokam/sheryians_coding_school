@@ -126,10 +126,27 @@ Problem 7: Mirror right angled triangle
 Problem 8: Print X shape
     
 */
+// let n = Number(prompt("Enter the loop counter: "));
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n; j++) {
+//     if (i == j || i + j == n + 1) {
+//       process.stdout.write("*");
+//     } else {
+//       process.stdout.write(" ");
+//     }
+//   }
+//   console.log();
+// }
+
+/* 
+Problem 9: Print V shape
+    
+*/
 let n = Number(prompt("Enter the loop counter: "));
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (i == j || i + j == n + 1) {
+let cols = 2 * n - 1;
+for (let i = 0; i < n; i++) {
+  for (let j = 1; j <= cols - i; j++) {
+    if (j == i + 1 || j == cols - i) {
       process.stdout.write("*");
     } else {
       process.stdout.write(" ");
