@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  height: 830px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.left {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  background-color: #fbc60d;
+  border-radius: 10px 0 0 10px;
+  left: 0%;
+  padding: 15% 20% 50px 80px;
+  /* line-height: 2; */
+  overflow: hidden;
+}
+.right {
+  width: 40%;
+  height: 100%;
+  background-color: #fae8b4;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  left: 60%;
+}
+
+.pokemon {
+  position: absolute;
+  height: 70%;
+  top: 20%;
+  left: 45%;
+}
+
+#logo {
+  position: absolute;
+  left: 2%;
+  top: 0;
+  z-index: 1;
+}
+
+#logo img {
+  line-height: 0;
+  margin-top: -55px;
+}
+
+.short_note {
+  font-size: 16px;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.left h1 {
+  font-size: 150px;
+}
+.para {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.5;
+  /* width: 70%; */
+}
+.line {
+  display: inline-block;
+  width: 50px;
+  margin-top: 20px;
+  border: 1px solid black;
+  transform: translateY(-50%);
+}
+.line + span {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.hamburger {
+  height: 100px;
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  /* background-color: #000; */
+  background: transparent;
+  line-height: 2;
+}
+
+.line2 {
+  width: 45px;
+  margin-top: 12px;
+  border: 2px solid black;
+  transform: translateY(-50%);
+}
+.navigation {
+  position: absolute;
+  top: 45%;
+  right: 50px;
+}
+.navigation ul {
+  list-style: none;
+}
+.navigation .circle {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #fbc60d;
+  margin-bottom: 5px;
+}
+.navigation .circle.active {
+  background-color: #000;
+}
+
+#logo2 {
+  position: absolute;
+  top: 550px;
+  left: 0px;
+  height: 500px;
+  color: #ccc;
+}

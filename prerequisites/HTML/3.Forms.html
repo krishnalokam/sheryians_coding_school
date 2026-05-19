@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>First Web Page</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <fieldset>
+        <legend>Personal details</legend>
+        <label for="name">Name:</label><br />
+        <input type="text" placeholder="Enter your name" id="name" /> <br />
+        <br />
+        <label for="email">Email:</label><br />
+        <input type="text" placeholder="Enter your email" id="email" /> <br />
+        <br />
+        <label for="phone">Phone:</label><br />
+        <input type="text" placeholder="Enter your phone" id="phone" /> <br />
+        <br />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Address Details</legend>
+        <label for="addressline1">Address Line 1</label><br />
+        <textarea id="addressline1" rows="5" cols="30"></textarea><br /><br />
+        <label for="country">Country</label>
+        <select id="country">
+          <option>India</option>
+          <option>Australia</option>
+          <option>Canada</option>
+          <option>England</option></select
+        ><br /><br />
+        <label for="city">City</label>
+
+        <select id="city">
+          <option>Delhi</option>
+          <option>Melbourne</option>
+          <option>Toronto</option>
+          <option>London</option></select
+        ><br /><br />
+      </fieldset>
+
+      <label for="course">Select the course:</label>
+      <select id="course">
+        <optgroup label="Frontend">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JS</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option value="nodejs">Nodejs</option>
+          <option value="expressjs">Expressjs</option>
+          <option value="mongodb">Mongodb</option>
+        </optgroup>
+      </select>
+      <br /><br />
+
+      <button>Submit form</button>
+    </form>
+  </body>
+</html>
