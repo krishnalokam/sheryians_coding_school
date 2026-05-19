@@ -123,12 +123,12 @@ header button {
 }
 
 .card h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 100;
   text-transform: capitalize;
 }
 
 .card .date {
   color: #565656;
-  font-size: 12px;
+  font-size: 14px;
 }
