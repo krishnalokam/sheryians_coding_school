@@ -46,7 +46,7 @@ body {
   /* left: 240px; 
 } */
 
-.nav {
+/* .nav {
   height: 80px;
   display: flex;
   align-items: center;
@@ -64,4 +64,25 @@ button {
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
+} */
+
+.container {
+  height: 100%;
+  display: flex;
+  background-color: beige;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.child {
+  height: 100px;
+  width: 100px;
+  background-color: royalblue;
+  border: 1px solid gold;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.child:nth-child(2n) {
+  background-color: crimson;
 }
