@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  font-family: "EB Garamond", serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #0a0806;
+  color: #fff;
+}
+.container header {
+  padding: 15px 50px;
+}
+header img {
+  display: block;
+  margin: auto;
+  height: 25px;
+}
+.container h1 {
+  text-align: center;
+  letter-spacing: 1.5;
+  font-size: 55px;
+  font-weight: 100;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px;
+}
+
+.section1 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 45px 15px 45px;
+  border-radius: 10px;
+  gap: 12px;
+  text-align: center;
+  background-color: #1e1a17;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 400px;
+}
+
+.section1 .card.active {
+  border: 0.2px solid #d78a42;
+}
+.section1 .card .picture {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .card img {
+  width: 150px;
+  margin: auto;
+}
+
+.section1 .card h2 {
+  font-size: 20 px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.section1 .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.section1 .card p {
+  color: #a39e9d;
+  font-size: 12px;
+}
+.section1 .card hr {
+  width: 30%;
+  margin: auto;
+  border: 0.1px solid #d78a42;
+}
+
+.section1 .card .price {
+  font-size: 22px;
+  font-weight: 500;
+  color: #d78a42;
+}
+
+.card .speciality {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 0.1px solid #d78a42;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 10px;
+  color: #d78a42;
+}
+
+.card .speciality .icon {
+  font-size: 8px;
+}
+
+.section2 {
+  display: flex;
+  height: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 0.2px solid #d78a42;
+  border-top: 0.2px solid #d78a42;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.section2 .left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 .left img {
+  width: 80%;
+}
+.section2 .right {
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.special {
+  text-transform: uppercase;
+  color: #d78a42;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 12px;
+}
+.section2 .right h2 {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  font-family: "EB Garamond", serif;
+}
+
+.section2 .content {
+  color: #5e5e5e;
+}
+
+.section2 .button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.2px solid #d78a42;
+  border-radius: 30px;
+  color: #d78a42;
+  gap: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.section2 .button p {
+  font-weight: 100;
+}
+
+main .gradient-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d78a42, transparent);
+  margin: 10px 0;
+}
+footer {
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5e5e5e;
+}
+
+footer .middle {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.pink {
+  color: #d78a42;
+  font-weight: 100;
+}
