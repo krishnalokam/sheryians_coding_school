@@ -59,3 +59,8 @@ transition - a change of state
 transition: all ease 2s;
 cubic-bezier
 ;
+
+# Grid
+
+Flex - 1D
+Grid - 2D
