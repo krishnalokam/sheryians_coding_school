@@ -14,15 +14,15 @@ main {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 100px auto 100px;
   grid-template-areas:
     "header header"
     "aside section"
     "footer footer";
   background-color: black;
-  row-gap: 50px;
-  column-gap: 20px;
+  row-gap: 15px;
+  column-gap: 30px;
 }
 
 header {
