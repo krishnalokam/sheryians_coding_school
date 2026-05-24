@@ -64,3 +64,5 @@ cubic-bezier
 
 Flex - 1D
 Grid - 2D
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
