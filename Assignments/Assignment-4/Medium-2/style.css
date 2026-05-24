@@ -24,41 +24,52 @@ main {
     "left_bottom bottom_center1 bottom_center2 bottom_center2 right_bottom";
   text-align: center;
   font-size: 30px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .left_top {
   background-color: royalblue;
   grid-area: left_top;
+  border-radius: 20px;
 }
 .left_bottom {
   background-color: rosybrown;
   grid-area: left_bottom;
+  border-radius: 20px;
 }
 .top_center1 {
   background-color: crimson;
   grid-area: top_center1;
+  border-radius: 20px;
 }
 .top_center2 {
   background-color: lightseagreen;
   grid-area: top_center2;
+  border-radius: 20px;
 }
 .center {
   background-color: lightcoral;
   grid-area: center;
+  border-radius: 20px;
 }
 .bottom_center1 {
   background-color: tan;
   grid-area: bottom_center1;
+  border-radius: 20px;
 }
 .bottom_center2 {
   background-color: lavender;
   grid-area: bottom_center2;
+  border-radius: 20px;
 }
 .right_top {
   background-color: rgb(169, 24, 48);
   grid-area: right_top;
+  border-radius: 20px;
 }
 .right_bottom {
   background-color: rgb(170, 197, 12);
   grid-area: right_bottom;
+  border-radius: 20px;
 }
