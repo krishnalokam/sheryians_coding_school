@@ -8,31 +8,34 @@ body {
   height: 100%;
   width: 100%;
 }
-
-main {
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-}
-@keyframes move {
-  from {
-    left: 0%;
-  }
-
-  to {
-    left: 60%;
-    rotate: 360deg;
-    background-color: royalblue;
-  }
+#parent {
+  /* display: flex; */
+  background-color: royalblue;
 }
 #box {
-  height: 200px;
-  width: 200px;
-  background-color: crimson;
-  animation-name: "move";
-  animation-duration: 2s;
-  position: absolute;
-  animation-iteration-count: 3;
+  height: 80px;
+  width: 100%;
+  background-color: lightseagreen;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+h4 {
+  color: white;
   font-size: 32px;
-  color: #fff;
+  animation-name: sher;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+h4:nth-child(2) {
+  background-color: crimson;
+}
+@keyframes sher {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
