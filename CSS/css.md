@@ -66,3 +66,24 @@ Flex - 1D
 Grid - 2D
 
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+width: fit-content;
+object-fit:
+
+# Responsiveness
+
+Units
+
+# Responsiveness
+
+- px
+- %
+- vw
+- vh
+- vmax - viewport maximum
+- vmin - viewport minimum
+- em - depends on parent font-size
+- rem - 1rem = 16px
+
+min
+max
