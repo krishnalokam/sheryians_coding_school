@@ -87,3 +87,8 @@ Units
 
 min
 max
+
+# Animations
+
+animations ko banana
+animations ko apply karna

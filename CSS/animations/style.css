@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+@keyframes move {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: 60%;
+    rotate: 360deg;
+    background-color: royalblue;
+  }
+}
+#box {
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+  animation-name: "move";
+  animation-duration: 2s;
+  position: absolute;
+  animation-iteration-count: 3;
+  font-size: 32px;
+  color: #fff;
+}
