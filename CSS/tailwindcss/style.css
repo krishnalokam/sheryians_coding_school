@@ -1,3 +1,10 @@
+:root {
+  --pure-white: #fff;
+  --king: rgb(66, 78, 205);
+  --queen: rgb(200, 94, 112);
+  --pad-btn: 15px 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,42 +16,18 @@ body {
   width: 100%;
   background-color: #000;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--pure-white);
 }
-body {
-  background-color: #000;
+h1 span {
+  color: var(--king);
 }
+
 button {
-  padding: 20px 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  color: var(--queen);
+  padding: var(--pad-btn);
   font-size: 32px;
-  margin: 100px;
-  background: transparent;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
 }
 
-button::after {
-  content: "";
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-
-  background-color: royalblue;
-  overflow: hidden;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  position: absolute;
-
-  z-index: -1;
-
-  /* transform: translate(-50%, -50%); */
-}
-button:hover::after {
-  transform: translate(-50%, -50%) scale(100);
-  transition: all ease 2s;
+p span {
+  color: var(--king);
 }
