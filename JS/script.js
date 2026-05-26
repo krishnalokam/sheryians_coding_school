@@ -1,14 +1,31 @@
-console.log("hello JS, I am Siva Lokam");
-console.warn("This is warning");
-console.error("This is error");
-console.table(["adarsh", "sarthak", "harsh"]);
+var a;
+console.log(a); //undefined,  default of a variable that is just declared
 
-var a = 20;
-var b = 3;
+var b = null;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
-console.log("value of a is", a, "value of b is", b);
+console.log(b);
+
+var c = 10n; //BigInt
+console.log(c);
+
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+
+var s1 = Symbol("hi");
+var s2 = Symbol("hi");
+console.log(s1 === 22); //false
+console.log(s1 == s2); //false
+
+alert("Todays date is May 26");
+// confirm("This website is only for Men, Are you a men?");
+var ans = confirm("Are you a man?");
+alert(ans);
+
+var uname = prompt("Enter your name");
+alert("Hello " + uname);
+console.log("Hello", uname);
+
+var s1 = "Siva Lokam";
+var a1 = 10;
+console.log(s1 - a1); //NaN
