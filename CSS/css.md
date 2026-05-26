@@ -96,3 +96,5 @@ animations ko apply karna
 #
 
 after before
+
+Tailwind is a utility framework
