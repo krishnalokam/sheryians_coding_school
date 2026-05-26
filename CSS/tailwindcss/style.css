@@ -10,49 +10,41 @@ body {
   background-color: #000;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-nav {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightseagreen;
-  gap: 20px;
+body {
+  background-color: #000;
 }
-
-h4 {
+button {
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 32px;
-  color: #fff;
+  margin: 100px;
+  background: transparent;
+  color: white;
   position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
 
-h4::after {
+button::after {
   content: "";
   height: 5px;
-  width: 0%;
-  background-color: crimson;
-  position: absolute;
-  bottom: 0;
+  width: 5px;
+  border-radius: 50%;
+
+  background-color: royalblue;
+  overflow: hidden;
   left: 50%;
-  transform: translateX(-50%);
-  /* display: none; */
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+
+  z-index: -1;
+
+  /* transform: translate(-50%, -50%); */
 }
-
-h4:hover::after {
-  width: 100%;
-  /* display: inline-block; */
-  /* animation-name: anime; */
-  /* animation-duration: 2s; */
-  /* animation-timing-function: ease; */
-
-  transition: all ease-in-out 0.5s;
-}
-
-@keyframes anime {
-  from {
-    transform: translateX(-10%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+button:hover::after {
+  transform: translate(-50%, -50%) scale(100);
+  transition: all ease 2s;
 }
