@@ -47,3 +47,41 @@ Rules for Identifiers in Java:
 Keyword and word :Keywords are reserved(built-in) words which has
 specific meanings and cannot be used as identifiers.e.g.public, class,
 static, if, else, while etc.
+
+# DataTypes
+Literal or Constant:
+Any constant value which can be assigned to the variable.
+DATA TYPES
+Data types are used to classify and define the type of data that a
+variable can hold.
+There are 2 types of Data Types:
+1.Primitive Data types: pre-defined, fixed size.
+2.Non-Primitive Data types: Customize and no fixed size.
+
+Default Values
+
+Data Type
+
+Default Value (for
+fields)
+byte 0
+short 0
+int 0
+long 0L
+float 0.0f
+double 0.0d
+char '\u0000'
+boolean false
+
+the compiler never assigns a default value to an uninitialized local
+variable(DTL).
+
++ operator between two char values
+  ● It performs addition between their Unicode code points.
+  ● For example :
+
+char a = 'a';
+char b = 'b';
+System.out.println(a+b);//97+98=195
+
+Output : 195
