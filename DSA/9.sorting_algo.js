@@ -2,7 +2,7 @@
 Selection Sort
 
 */
-
+/*
 let arr = [8, 1, 0, 5, 5, 2, 3, 7, 8, 0];
 let counter = 0;
 for (let i = arr.length - 1; i > 0; i--) {
@@ -19,3 +19,4 @@ for (let i = arr.length - 1; i > 0; i--) {
   //   if (++counter == 3) break;
 }
 console.log(arr);
+*/
