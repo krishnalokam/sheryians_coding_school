@@ -11,34 +11,48 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-size: 50px;
-  color: royalblue;
-}
-h1::before {
-  content: "Hey there! ";
-  color: white;
-}
-h1::after {
-  content: ", Siva, how are you!";
-  color: crimson;
+nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightseagreen;
+  gap: 20px;
 }
 
-#box {
-  height: 200px;
-  width: 500px;
-  background-color: royalblue;
+h4 {
   font-size: 32px;
-  font-weight: 600;
-  margin: 20px;
-  padding: 20px;
+  color: #fff;
+  position: relative;
 }
 
-#box::before {
-  content: "Before box";
-  color: white;
+h4::after {
+  content: "";
+  height: 5px;
+  width: 0%;
+  background-color: crimson;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* display: none; */
 }
-#box::after {
-  content: " After box";
-  color: lightseagreen;
+
+h4:hover::after {
+  width: 100%;
+  /* display: inline-block; */
+  /* animation-name: anime; */
+  /* animation-duration: 2s; */
+  /* animation-timing-function: ease; */
+
+  transition: all ease-in-out 0.5s;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
