@@ -29,3 +29,21 @@ Role of + operator between String & numbers
 ● String + String = String - Concatenation
 ● String + int = String - Concatenation
 ● int + int = int - Arithmetic Addition
+
+Identifiers- Identifiers are used to uniquely identify the variables.
+Identifier is a name given to a variable, class, method, package, or other
+program elements.
+Rules for Identifiers in Java:
+1. Start: Must start with an alphabet or _ or $ NOT with a digit.
+2. End: Can end with an alphabet or _ or $ or numeric digit.
+3. No Reserved Words : You cannot use Java's reserved words (also
+   known as keywords) as identifiers.
+4. No Special Symbols: Identifiers cannot contain special symbols like @,
+   #, %, etc. except for underscores (_) and dollar signs ($).
+5. No Space : Spaces are not allowed.
+6. Length – No Limit
+   Java is CASE SENSITIVE : Shery and shery is different for java
+
+Keyword and word :Keywords are reserved(built-in) words which has
+specific meanings and cannot be used as identifiers.e.g.public, class,
+static, if, else, while etc.
