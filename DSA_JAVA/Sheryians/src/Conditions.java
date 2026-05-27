@@ -5,11 +5,24 @@ public class Conditions {
         Scanner sc = new Scanner(System.in);
 //        validVoter(sc);
 //        gradeMarks(sc);
+//          greater(sc);
+          evenOrOdd(sc);
+
 
 //        test();
-        test2();
+//        test2();
     }
-
+    private static void evenOrOdd(Scanner sc) {
+        int number = sc.nextInt();
+        if(number %2 == 0) System.out.println("Even number");
+        else System.out.println("Odd number");
+    }
+    private static void greater(Scanner sc){
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if(a > b) System.out.println("a is greater than b");
+        else System.out.println("b is greater than a");
+    }
     private static void test2() {
         int hops = 0;
         int jumps = 0;
