@@ -238,3 +238,48 @@ less than or equal to the other.
 
 Example : a = a+5, we can write a += 5.
 do not use =+ & -= [(=) followed by a unary plus (+)]
+
+# Package
+Package
+A Java package is a collection of similar types of sub-packages,
+interfaces, and classes. They help you manage and group related
+classes, interfaces, and sub-packages to avoid naming conflicts and
+create a more organized and maintainable codebase.
+Example:
+Directories or folders on your computer's file system(manage files).
+In Java, there are two types of packages: built-in packages and
+user-defined packages.
+in-built packages : They are available in Java, including util, lang, awt
+etc. We can import all members of a package using package
+name.* statement
+
+java.lang is a special package that is automatically imported by default
+in every Java class.
+Commonly used classes and types from the java.lang package include:
+String, System, Math etc.
+
+User-defined packages: User-defined packages are those that the users
+define. Inside a package, you can have Java files like classes, interfaces,
+and a package as well (called a sub-package).
+
+Math Class
+java.lang.Math class is a built-in class. It provides mathematical
+functions and constants for mathematical operations.
+Commonly used methods and constants:
+Math.abs(a) Returns the absolute value of a value.
+
+Math.sqrt(a) Returns the sqrt root of a double value.
+
+Math.ceil(a) Returns the closest value that is greater than or equal to the
+
+argument
+
+Math.max(a, b) Returns the greater of two values.
+
+Math.min(a, b) Returns the smaller of two values.
+Math.pow(a, b) Returns a raised to the power of b.
+Math.random() Returns a double value with a positive sign, greater than or equal to 0.0
+
+and less than 1.0
+
+Math.PI, Math.floor(a)(closest value
