@@ -7,3 +7,5 @@
   - Greet the user
 - Accept and print the answer
 - Swap two variables via three methods
+
+![alt text](image.png)

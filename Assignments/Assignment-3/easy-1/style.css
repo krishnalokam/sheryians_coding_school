@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #c5abc1;
+  --border-radius: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  height: 70%;
+  width: 57%;
+  padding: 50px;
+  background: linear-gradient(to bottom right, #490533, #0e0858);
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--primary-color);
+}
+.top_left {
+  top: 20px;
+  left: 10px;
+}
+.top_right {
+  top: 20px;
+  right: 10px;
+}
+.middle_left {
+  bottom: 150px;
+  left: 10px;
+}
+
+.middle_right {
+  bottom: 150px;
+  right: 10px;
+}
+.bottom {
+  height: 7px;
+  width: 7px;
+  background-color: #fff;
+}
+.bottom_left {
+  bottom: 20px;
+  left: 10px;
+}
+
+.bottom_right {
+  bottom: 20px;
+  right: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+main {
+  height: 100%;
+}
+main h2 {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+.card {
+  width: 20%;
+  height: 220px;
+  margin: 10px 5px;
+  background-color: #fff;
+  background: linear-gradient(#6e3d62, #4a4071);
+  padding: 20px 20px 10px 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #f9f2ff;
+}
+
+.card img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  border: 1px solid #fff;
+}
+
+.card .content {
+  width: 100%;
+  display: flex;
+  align-items: safe;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  padding: 5px 0px;
+}
+
+.card .content i {
+  color: #9370c1;
+  /* font-size: 10px; */
+}
+
+.card .content h3 {
+  font-size: 10px;
+}
+
+.card .content .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.value {
+  font-size: 10px;
+}
+.card button {
+  background-color: #4c406d;
+  border: 3px solid #9171c2;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 12px;
+  color: #f9f2ff;
+}
