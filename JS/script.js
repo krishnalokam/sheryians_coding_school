@@ -1,4 +1,4 @@
-var a;
+/*var a;
 console.log(a); //undefined,  default of a variable that is just declared
 
 var b = null;
@@ -29,3 +29,16 @@ console.log("Hello", uname);
 var s1 = "Siva Lokam";
 var a1 = 10;
 console.log(s1 - a1); //NaN
+
+var a = "10";
+var b = "20";
+console.log(a * b);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*
+Loops
+*/
+var a = 5;
+while (a < 10) {
+  console.log(a);
+  a++;
+}

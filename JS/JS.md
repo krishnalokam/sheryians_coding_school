@@ -68,6 +68,14 @@ JavaScript is a single threaded Synchronous programming language which can be us
 
   Primitive : at one point of time , only one value will be stored
 
+# Type Coercion
+
+- Type coercion is the automatic or implicit conversion of values from one data type to another
+
+Binary Operators
+Arithmetic Operators
+Assignment Operators
+
 ## phase 2 : Functions, arrays, objects
 
 ## phase 3: the HOW Begins ()
