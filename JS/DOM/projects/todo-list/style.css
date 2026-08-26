@@ -5,12 +5,15 @@
 }
 html,
 body {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(119, 40, 40);
+}
+#mobile {
+  display: none;
 }
 main {
   background-color: rgb(109, 92, 92);
@@ -111,5 +114,11 @@ button {
   button {
     font-size: 12px;
     padding: 10px 20px;
+  }
+  #mobile {
+    display: flex;
+  }
+  #desktop {
+    display: none;
   }
 }
