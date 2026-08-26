@@ -5,7 +5,7 @@
 }
 html,
 body {
-  height: 100%;
+  /* min-height: 100%; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@ main {
   align-items: center;
   gap: 30px;
   border-radius: 20px;
-  height: 90%;
+  min-height: 90vh;
   width: 80%;
 }
 #collect {
@@ -31,6 +31,13 @@ main {
   align-items: center;
   gap: 20px;
   width: 60%;
+
+  position: sticky;
+  top: 30px;
+  background-color: rgb(140, 45, 45);
+  padding: 30px;
+  border-radius: 20px;
+  z-index: 1;
 }
 input {
   padding: 15px 25px;
@@ -83,4 +90,19 @@ button {
   font-weight: bold;
   border-radius: 10px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  #collect {
+    flex-direction: column;
+    width: 90%;
+  }
+  #todo-list {
+    width: 90%;
+  }
+  .item {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
 }
