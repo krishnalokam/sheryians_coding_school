@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(119, 40, 40);
+}
+main {
+  background-color: rgb(109, 92, 92);
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  height: 90%;
+  width: 80%;
+}
+#collect {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+}
+input {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+
+/* #add {
+  padding: 10px 30px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  letter-spacing: 1px;
+} */
+h1 {
+  color: wheat;
+}
+#todo-list {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(176, 159, 159);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: antiquewhite;
+  color: rgb(119, 40, 40);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}

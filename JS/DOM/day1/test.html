@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      body {
+        font-size: 24px;
+      }
+      .done {
+        color: crimson;
+        text-decoration: line-through solid black 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Instructions for life:</p>
+
+    <ul>
+      <li>Eat</li>
+      <li>Sleep</li>
+      <li>Repeat</li>
+    </ul>
+
+    <script>
+      function toggleDone(element) {
+        if (!element.target.className) {
+          element.target.className = "done";
+        } else {
+          element.target.className = "";
+        }
+      }
+
+      const listItems = document.querySelectorAll("li");
+      listItems.forEach(function (item) {
+        item.addEventListener("click", toggleDone);
+      });
+    </script>
+  </body>
+</html>

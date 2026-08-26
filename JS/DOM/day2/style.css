@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  text-align: center;
+}
+.bulb {
+  height: 90vmin;
+  width: 90vmin;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("Bhavin.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid white;
+  /* transition: 1s ease-in-out; */
+}
+
+.lightbulbUp {
+  /* background-color: yellow; */
+}
+
+button {
+  padding: 20px 40px;
+  background-color: white;
+  color: blue;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: none;
+}
+
+/* @media (max-width: 600px) {
+  .bulb {
+    height: 90vw;
+    width: 90vw;
+    border-radius: 30px;
+  }
+} */
