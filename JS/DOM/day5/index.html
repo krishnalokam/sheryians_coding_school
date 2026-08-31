@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Todo list</title>
+    <title>DOM | Day5</title>
   </head>
   <body>
+    <div id="top">
+      <p>Timer - <span id="timer">0</span></p>
+      <p>Score - <span id="scorer">0</span></p>
+    </div>
     <main>
-      <h1 id="desktop">Todo list</h1>
-      <div id="collect">
-        <h1 id="mobile">Todo list</h1>
-
-        <input type="text" name="" placeholder="Enter Task details" id="" />
-        <button id="add">Add</button>
-      </div>
-      <div id="todo-list"></div>
+      <div class="box"></div>
     </main>
+    <div>
+      <button id="start">Start</button>
+    </div>
+    <div id="overlay">Game Over</div>
     <script src="script.js"></script>
   </body>
 </html>
