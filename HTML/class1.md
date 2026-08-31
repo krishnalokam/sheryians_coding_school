@@ -1,7 +1,23 @@
-# Tutor : Sarthank
+# Tutor : Sarthak sharma
+
+Webdevelopment. - Full stack
+
+- Fronend
+- Backend
+
+Code Editr - VS Code
+Browers - brave
 
 - Files - Collection of single type of data
+  notes.txt
+  photo.jpg
+  video.mp4
+
+  filenam.filetype
+
 - Folder - Collection of files
+
+## Frontend
 
 - HTML (for structure)
 - CSS (for styling)
@@ -21,11 +37,14 @@ HTML - Hyper Text Markup Language
 
 # SEO related
 
+    <meta charset="UTF-8" />
+
 <meta name="descripton" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-UTM -
+UTM - Urchin Tracking Module
 
-<meta name="canonical" content="riddles.sivalokam.co.in">
+<link rel="canonical" href="riddles.sivalokam.co.in">
 
 <!-- Open graph -->
 <meta property="og:title" content="Best HTML Course for Beginners" />

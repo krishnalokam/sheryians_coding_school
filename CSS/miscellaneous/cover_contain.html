@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image</title>
+    <style>
+      div.options {
+        margin: auto;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      div#flag {
+        height: 500px;
+        width: 600px;
+        border: 10px solid orangered;
+        background-image: url("./ashoka_chakra.png");
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="options">
+      <input
+        class="bgsize"
+        type="radio"
+        name="background-size"
+        id="cover"
+        value="cover"
+      /><label for="cover">cover</label>
+      <input
+        class="bgsize"
+        type="radio"
+        name="background-size"
+        id="contain"
+        value="contain"
+      /><label for="contain">contain</label>
+    </div>
+    <div id="flag"></div>
+    <script>
+      //   document.getElementsByClassName("bgsize").onClick(function (e) {
+      //     console.log("clicked");
+      //   });
+      document.querySelectorAll(".bgsize").forEach(function (el) {
+        el.addEventListener("click", function (ev) {
+          console.log(ev.target.value);
+          document.querySelector("#flag").style.backgroundSize =
+            ev.target.value;
+        });
+      });
+    </script>
+  </body>
+</html>

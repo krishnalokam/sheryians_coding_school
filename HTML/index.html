@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=5.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+
     <meta name="descripton" content="" />
+
+
     <!-- Keywords are removed at present -->
     <meta name="keywords" content="ben10 toys, harriporter toys" />
 
@@ -46,6 +50,9 @@
     <!-- Theme color -->
     <meta name="theme-color" content="#ff0000" />
 
+<link rel="canonical" href="riddles.sivalokam.co.in">
+
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -60,10 +67,10 @@
         "image": "https://example.com/html-forms-og.jpg"
       }
     </script>
-    <title>Document</title>
+    <title>Day1</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <h1>My First Page</h1>
     <h2>Hello</h2>
     <h3>Hello</h3>
     <h4>Hello</h4>
@@ -79,6 +86,121 @@
     <p>Hello, I am <i>Siva Lokam</i></p>
     <!-- em is more readable -->
     <p>Hello, I am <em>Siva Lokam</em></p>
-    <a href="./class1.md" download="notes.md">Download</a>
+    <p>2<sup>2</sup></p>
+    <p>H<sub>2</sub>O</p>
+
+    <ol reversed>
+      <li style="list-style: decimal-leading-zero">Siva</li>
+      <li style="list-style: lower-alpha">Sowndarya</li>
+      <li>Souji</li>
+    </ol>
+
+    <ul>
+      <li>Siva</li>
+      <li>Sowndarya</li>
+      <li>Souji</li>
+    </ul>
+
+    <a href="./class1.md" download="notes.md">Download</a> <br />
+    <a href="tel:9876543210">Call me</a> <br />
+    <a href="mailto:siva.lokam4work@gmail.com">siva</a> <br />
+    <a href="https://sheryians.com" target="_blank">Sheryians</a>
+
+    <details>
+      <summary>WHO</summary>
+      <p>World Health Organization</p>
+    </details>
+    <select name="color" id="">
+      <option value="#f00">Red</option>
+      <option value="#0f0">Green</option>
+      <option value="#00f">Blue</option>
+    </select>
+    <hr />
+    <p style="margin: 20px"></p>
+    <h1>Images</h1>
+    <img height="100" src="panda.jpg" alt="Panda Image not found" />
+    <video src="video.mp4" autoplay controls loop muted></video>
+    <audio src="audio.mp3" controls loop muted></audio>
+    <hr />
+    <h3>Tables</h3>
+    <style>
+      table {
+        border: 1px solid black;
+      }
+    </style>
+    <table width="100%" cellspacing="2" cellpadding="2" border="1">
+      <caption>
+        Student Data
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ram</td>
+          <td>20</td>
+          <td>Male</td>
+          <td>Ayodhya</td>
+        </tr>
+        <tr>
+          <td>Sita</td>
+          <td>21</td>
+          <td>Female</td>
+          <td>Ayodhya</td>
+        </tr>
+        <tr>
+          <td>Laxman</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Ayodhya</td>
+        </tr>
+        <tr>
+          <td>Krishna</td>
+          <td>25</td>
+          <td>Male</td>
+          <td>Dwaraka</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- scope=col -->
+        <tr>
+          <td colspan="4">End of Data</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h3>Forms</h3>
+    <form action="">
+      <input required type="text" name="name" placeholder="Enter name" id="" />
+      <br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        id=""
+      />
+      <br />
+      <input type="email" name="email" placeholder="Enter email" id="" />
+      <br />
+      <input type="date" name="" id="" /> <br /><br />
+      <input type="radio" name="gender" id="male" value="1"><label for="male">Male</label></input>
+      <input type="radio" name="gender" id="female" value="2"><label for="female">Female</label></input>
+      <input type="radio" name="gender" id="other" value="3"><label for="other">Other</label></input> <br> <br>
+
+      <input type="checkbox" name="terms" id="terms" /> 
+      <label for="terms">I accept terms & conditions</label>
+      <br /><br />
+      <input type="file" name="data" id="" >
+      <br /><br />
+      <input type="month" name="month" id="">
+
+      <abbr title="Hyper Text Markup Language">HTML</abbr>
+      <button>Submit</button>
+    </form>
   </body>
 </html>

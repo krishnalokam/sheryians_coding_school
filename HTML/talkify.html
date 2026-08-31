@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h2>Part 9: Forms :The Most Complex HTML Topic</h2>
+      <p>
+        Forms are how users send data to servers. They're also the most complex
+        part of HTML because every element has specific behaviors, attributes,
+        and accessibility requirements.A complete, correct form looks like this:
+      </p>
+      <form action="" method="POST" novalidate>
+        <fieldset>
+          <div class="form-group">
+            <legend>Personal Information</legend>
+            <label for="full-name"
+              >Full name<span aria-hidden="true">*</span></label
+            >
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              required
+              autocomplete="name"
+              aria-required="true"
+              aria-describedby="name-hint"
+            />
+            <span id="name-hint"
+              >Enter your name as it appears on official documents</span
+            >
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <fieldset>
+            <legend>Preferred contact method</legend>
+            <label
+              ><input type="radio" name="contact" value="email" /> Email</label
+            >
+            <label
+              ><input type="radio" name="contact" value="phone" /> Phone</label
+            >
+          </fieldset>
+        </fieldset>
+        <button type="submit" value="">Submit Form</button>
+      </form>
+    </section>
+  </body>
+</html>

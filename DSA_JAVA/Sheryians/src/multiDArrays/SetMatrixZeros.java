@@ -9,7 +9,7 @@ public class SetMatrixZeros {
     public static void main(String[] args) {
      int[][] matrix = new int[][]{{1,1,1},{1,0,1}};
      for(int i = 0; i< matrix.length; i++){
-         for(int j = 0; j<)
+//         for(int j = 0; j<)
      }
     }
 }

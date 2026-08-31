@@ -5,11 +5,191 @@
 }
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #d6d7f6;
 }
-
+.mycontainer {
+  margin: 30px 0;
+  width: 1500px;
+  padding: 20px 50px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #fff;
+}
 #logo {
   height: 80px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu,
+#theme {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+#searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 80px 0;
+}
+#searchbar div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+#searchbar div input {
+  border-radius: 30px;
+  padding: 20px 30px 20px 50px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+.searchicon {
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.filter {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+.filter svg {
+  height: 30px;
+}
+.notes {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
   text-align: center;
+}
+
+.notes img {
+  width: 30px;
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+#images .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ccc;
+}
+#images .top .like svg {
+  height: 20px;
+}
+#images .card {
+  width: 22%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+  border-bottom: 5px solid green;
+}
+#images .image {
+  text-align: center;
+}
+
+.card .image {
+  /* width: 95%; */
+  width: 100%;
+  text-align: center;
+}
+.card .image img {
+  width: 90%;
+  height: 250px;
+  text-align: center;
+  object-fit: contain;
+}
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 2px 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag img {
+  width: 15px;
+}
+
+.tag .title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: green;
+}
+
+.right svg {
+  height: 10px;
+}
+.bottom .icon {
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+}
+.bottom .icon svg {
+  font-size: 20px;
+}
+.third {
+  margin: 30px 0;
+}
+.data {
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 30%;
+  border-right: 1px solid #ccc;
+}
+.card2 img {
+  height: 50px;
 }

@@ -3,14 +3,268 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Assignment-1|Medium|Pokemon</title>
+    <!-- 
+    https://app.notion.com/image/attachment%3Aced53f45-dab1-49f7-9949-2ac2f1ec7c60%3Asecond.png?table=block&id=35aaa7c5-a79e-80e2-8279-ea6eaf143699&spaceId=203aa7c5-a79e-81af-8a00-0003f4d6f17f&width=390&userId=2a0d872b-594c-81ee-af8b-00027e65e0c7&cache=v2&imgBuildSrc=requestProxiedImageUrl
+    
+    -->
   </head>
   <body>
-    <header>
-      <div id="logo">
-        <img src="./assets/logo.png" alt="" />
-      </div>
-    </header>
+    <div class="mycontainer">
+      <header>
+        <div id="logo">
+          <div id="menu"><i class="ri-menu-line"></i></div>
+          <img src="./assets/logo.png" alt="" />
+          <div id="theme"><i class="ri-sun-line"></i></div>
+        </div>
+      </header>
+      <main>
+        <section id="searchbar">
+          <div>
+            <input
+              type="text"
+              name="q"
+              id=""
+              placeholder="Search for Pokemon..."
+              size="30"
+            />
+            <i class="ri-search-line searchicon"></i>
+          </div>
+          <div>
+            <div class="filter">
+              Filter by types (1)
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="notes">
+              <img src="./assets/notes.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section id="images">
+          <div class="card">
+            <div class="top">
+              <div class="colorcode">#0908</div>
+              <div class="like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 8.81056L13.6352 6.48845C14.2721 5.58412 15.3179 5 16.5 5C18.433 5 20 6.567 20 8.5C20 11.3788 18.0407 14.1215 15.643 16.3358C14.4877 17.4027 13.3237 18.2603 12.4451 18.8521C12.2861 18.9592 12.1371 19.0571 11.9999 19.1456C11.8627 19.0571 11.7137 18.9592 11.5547 18.8521C10.6761 18.2604 9.51216 17.4028 8.35685 16.3358C5.95926 14.1216 4 11.3788 4 8.5C4 6.567 5.567 5 7.5 5C8.68209 5 9.72794 5.58412 10.3648 6.48845L12 8.81056ZM10.5557 3.92626C9.68172 3.3412 8.63071 3 7.5 3C4.46243 3 2 5.46243 2 8.5C2 16 11.9999 21.4852 11.9999 21.4852C11.9999 21.4852 22 16 22 8.5C22 5.46243 19.5376 3 16.5 3C15.3693 3 14.3183 3.3412 13.4443 3.92626C12.8805 4.3037 12.3903 4.78263 12 5.33692C11.6097 4.78263 11.1195 4.3037 10.5557 3.92626Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="image">
+              <img src="./assets/meowscarada.png" alt="meowscarada" />
+            </div>
+            <div class="title">Meowscarada</div>
+            <div class="bottom">
+              <div class="tag">
+                <img src="./assets/grass.png" alt="" /><span class="title"
+                  >grass</span
+                >
+              </div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- second -->
+          <div class="card">
+            <div class="top">
+              <div class="colorcode">#0908</div>
+              <div class="like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 8.81056L13.6352 6.48845C14.2721 5.58412 15.3179 5 16.5 5C18.433 5 20 6.567 20 8.5C20 11.3788 18.0407 14.1215 15.643 16.3358C14.4877 17.4027 13.3237 18.2603 12.4451 18.8521C12.2861 18.9592 12.1371 19.0571 11.9999 19.1456C11.8627 19.0571 11.7137 18.9592 11.5547 18.8521C10.6761 18.2604 9.51216 17.4028 8.35685 16.3358C5.95926 14.1216 4 11.3788 4 8.5C4 6.567 5.567 5 7.5 5C8.68209 5 9.72794 5.58412 10.3648 6.48845L12 8.81056ZM10.5557 3.92626C9.68172 3.3412 8.63071 3 7.5 3C4.46243 3 2 5.46243 2 8.5C2 16 11.9999 21.4852 11.9999 21.4852C11.9999 21.4852 22 16 22 8.5C22 5.46243 19.5376 3 16.5 3C15.3693 3 14.3183 3.3412 13.4443 3.92626C12.8805 4.3037 12.3903 4.78263 12 5.33692C11.6097 4.78263 11.1195 4.3037 10.5557 3.92626Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="image">
+              <img src="./assets/pawniard.webp" alt="pawniard" />
+            </div>
+            <div class="title">Pawniard</div>
+            <div class="bottom">
+              <div class="tag">
+                <img src="./assets/grass.png" alt="" /><span class="title"
+                  >Dark/Steel</span
+                >
+              </div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- third -->
+          <div class="card">
+            <div class="top">
+              <div class="colorcode">#0908</div>
+              <div class="like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 8.81056L13.6352 6.48845C14.2721 5.58412 15.3179 5 16.5 5C18.433 5 20 6.567 20 8.5C20 11.3788 18.0407 14.1215 15.643 16.3358C14.4877 17.4027 13.3237 18.2603 12.4451 18.8521C12.2861 18.9592 12.1371 19.0571 11.9999 19.1456C11.8627 19.0571 11.7137 18.9592 11.5547 18.8521C10.6761 18.2604 9.51216 17.4028 8.35685 16.3358C5.95926 14.1216 4 11.3788 4 8.5C4 6.567 5.567 5 7.5 5C8.68209 5 9.72794 5.58412 10.3648 6.48845L12 8.81056ZM10.5557 3.92626C9.68172 3.3412 8.63071 3 7.5 3C4.46243 3 2 5.46243 2 8.5C2 16 11.9999 21.4852 11.9999 21.4852C11.9999 21.4852 22 16 22 8.5C22 5.46243 19.5376 3 16.5 3C15.3693 3 14.3183 3.3412 13.4443 3.92626C12.8805 4.3037 12.3903 4.78263 12 5.33692C11.6097 4.78263 11.1195 4.3037 10.5557 3.92626Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="image">
+              <img src="./assets/houndon.jpeg" alt="houndon" />
+            </div>
+            <div class="title">Houndoom</div>
+            <div class="bottom">
+              <div class="tag">
+                <img src="./assets/grass.png" alt="" /><span class="title"
+                  >Dark/Fire</span
+                >
+              </div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth -->
+          <div class="card">
+            <div class="top">
+              <div class="colorcode">#0908</div>
+              <div class="like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 8.81056L13.6352 6.48845C14.2721 5.58412 15.3179 5 16.5 5C18.433 5 20 6.567 20 8.5C20 11.3788 18.0407 14.1215 15.643 16.3358C14.4877 17.4027 13.3237 18.2603 12.4451 18.8521C12.2861 18.9592 12.1371 19.0571 11.9999 19.1456C11.8627 19.0571 11.7137 18.9592 11.5547 18.8521C10.6761 18.2604 9.51216 17.4028 8.35685 16.3358C5.95926 14.1216 4 11.3788 4 8.5C4 6.567 5.567 5 7.5 5C8.68209 5 9.72794 5.58412 10.3648 6.48845L12 8.81056ZM10.5557 3.92626C9.68172 3.3412 8.63071 3 7.5 3C4.46243 3 2 5.46243 2 8.5C2 16 11.9999 21.4852 11.9999 21.4852C11.9999 21.4852 22 16 22 8.5C22 5.46243 19.5376 3 16.5 3C15.3693 3 14.3183 3.3412 13.4443 3.92626C12.8805 4.3037 12.3903 4.78263 12 5.33692C11.6097 4.78263 11.1195 4.3037 10.5557 3.92626Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="image">
+              <img src="./assets/Inkay.jpeg" alt="Inkay" />
+            </div>
+            <div class="title">Inkay</div>
+            <div class="bottom">
+              <div class="tag">
+                <img src="./assets/grass.png" alt="" /><span class="title"
+                  >Dark/Steel</span
+                >
+              </div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="third">
+          <div class="data">
+            <div class="card2">
+              <img src="./assets/explore.png" alt="Explore" />
+              <div>
+                <h4>Explore</h4>
+                <p>Discover all your favourite Pokemon</p>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./assets/explore.png" alt="Explore" />
+              <div>
+                <h4>Explore</h4>
+                <p>Discover all your favourite Pokemon</p>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./assets/explore.png" alt="Explore" />
+              <div>
+                <h4>Explore</h4>
+                <p>Discover all your favourite Pokemon</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="third">
+          <div class="data">
+            <div class="card2">
+              <img src="./assets/explore.png" alt="Explore" />
+              <div>
+                <h4>Explore</h4>
+                <p>Discover all your favourite Pokemon</p>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./assets/explore.png" alt="Explore" />
+              <div>
+                <h4>Explore</h4>
+                <p>Discover all your favourite Pokemon</p>
+              </div>
+            </div>
+            <div class="card2">
+              <img src="./assets/explore.png" alt="Explore" />
+              <div>
+                <h4>Explore</h4>
+                <p>Discover all your favourite Pokemon</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

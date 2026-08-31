@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(8, 1, 30);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  justify-content: space-between;
+}
+.box {
+  height: 150px;
+  width: 150px;
+}
+.child1 {
+  background-color: royalblue;
+}
+
+.child2 {
+  background-color: crimson;
+}
+
+.child3 {
+  background-color: lightseagreen;
+}
+
+.child4 {
+  background-color: rosybrown;
+}

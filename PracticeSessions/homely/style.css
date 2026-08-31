@@ -8,4 +8,38 @@ body {
   height: 100%;
   width: 100%;
 }
-    
+
+header {
+  display: flex;
+  max-width: 1500px;
+  padding: 10px 20px;
+  margin: auto;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.links ul li a {
+  text-decoration: none;
+}
+#header_buttons {
+  display: flex;
+  gap: 20px;
+}
+button {
+  border: none;
+  background: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contact {
+  background-color: #000;
+}

@@ -7,6 +7,17 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
   background-color: beige;
 }
 /* .parent {
@@ -65,7 +76,7 @@ button {
   padding: 10px 20px;
   border-radius: 20px;
 } */
-
+/*
 .container {
   height: 100%;
   display: flex;
@@ -85,4 +96,4 @@ button {
 
 .child:nth-child(2n) {
   background-color: crimson;
-}
+} */

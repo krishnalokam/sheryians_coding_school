@@ -1,5 +1,8 @@
 HTML - For content
 CSS - Styling
+
+CSS - Cascading Style Sheet
+
 inline css
 internal css
 external css
@@ -59,6 +62,57 @@ transition - a change of state
 transition: all ease 2s;
 cubic-bezier
 ;
+
+css boiler plate code:
+
+- \* {
+  margin : 0;
+  padding :0;
+  box-sizing: border-box;
+  }
+
+  html, body {
+  height: 100%;
+  width: 100%;
+  }
+
+### position absolute
+
+position: absolute
+z-index
+
+transform: translate(-50%,-50%);
+transform: translateX(10%);
+transform:translateY(10%);
+transform: translate(-50%, -50%) rotate(45deg);
+transform:rotateX(90deg)
+
+body {
+perspective: 1000px
+}
+
+#box1 {
+transform: scale(1.5); // scales 1.5 times its original size
+}
+
+.box:nth-child(3){
+background-color: crimson;
+}
+
+.box:nth-last-child(1){
+background-color: crimson;
+
+}
+
+.box:nth-last-child(2n){
+background-color: crimson;
+
+}
+
+{
+position:fixed;
+position:sticky
+}
 
 # Grid
 
