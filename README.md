@@ -1,6 +1,13 @@
 # sheryians_coding_school
 
-# links:
+# projects
+
+| Language | Project   | Link                                                                                      |
+| -------- | --------- | ----------------------------------------------------------------------------------------- |
+| JS - Dom | Todo      | [Todo](https://sivalokamdsa.github.io/sheryians_coding_school/JS/DOM/projects/todo-list/) |
+| JS - Dom | JS - Game | [Game](https://sivalokamdsa.github.io/sheryians_coding_school/JS/DOM/day5/) 6             |
+
+### links:
 
 Notes in PDF
 https://drive.google.com/drive/folders/1EXdNJovX0Kw_dtAwG9VARhPT7r3wUIx1
