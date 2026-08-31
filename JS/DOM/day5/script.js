@@ -41,7 +41,9 @@ const randomBox = () => {
 
 start.addEventListener("click", () => {
   clearInterval(interval);
+  start.textContent = "Game is On";
 
+  start.disabled = true;
   var interval = setInterval(() => {
     box.style.display = "block";
     timer.textContent = ++timerValue;
@@ -59,6 +61,8 @@ start.addEventListener("click", () => {
       timer.textContent = 0;
       scorer.textContent = 0;
       box.style.display = "none";
+      start.textContent = "Start";
+      start.disabled = false;
     }, 3000);
   }, 10000);
 });
