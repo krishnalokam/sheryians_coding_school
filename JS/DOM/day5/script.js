@@ -43,12 +43,19 @@ start.addEventListener("click", () => {
   clearInterval(interval);
   start.textContent = "Game is On";
 
+  let initTimeout = Math.floor(Math.random() * 1000);
+  if (!initTimeout) initTimeout = 500;
+  let boxTimeout = initTimeout + 1000;
+
+  let programTimeout = boxTimeout * 10;
+  console.log("boxTimeout ", boxTimeout);
+  console.log("programTimeout ", programTimeout);
   start.disabled = true;
   var interval = setInterval(() => {
     box.style.display = "block";
     timer.textContent = ++timerValue;
     randomBox();
-  }, 1000);
+  }, boxTimeout);
 
   setTimeout(() => {
     clearInterval(interval);
@@ -64,7 +71,7 @@ start.addEventListener("click", () => {
       start.textContent = "Start";
       start.disabled = false;
     }, 3000);
-  }, 10000);
+  }, programTimeout);
 });
 
 box.addEventListener("click", () => {
